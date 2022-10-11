@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCollectionViewCell" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="TravelBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="214"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="253" height="214"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3n-LR-qzq">
+                        <rect key="frame" x="0.0" y="0.0" width="253" height="214"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepic1" translatesAutoresizingMaskIntoConstraints="NO" id="QVb-88-Jlr">
+                                <rect key="frame" x="0.0" y="0.0" width="253" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="VTD-EP-OfL"/>
+                                    <constraint firstAttribute="height" constant="120" id="sKS-Oa-AbC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPERIENCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qc2-q3-taM">
+                                <rect key="frame" x="12" y="124" width="216" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="O8q-We-Tqb"/>
+                                    <constraint firstAttribute="height" constant="34" id="chT-Uv-SOS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beautiful Alley Scene in Old Town in Europe at Sunset" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bu3-FC-WAz">
+                                <rect key="frame" x="12" y="159" width="229" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="229" id="6hx-J6-ylT"/>
+                                    <constraint firstAttribute="height" constant="47" id="vuE-Mt-h0k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jfe-8V-jdo">
+                                <rect key="frame" x="205" y="16" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Bookmark"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vector" translatesAutoresizingMaskIntoConstraints="NO" id="2eG-3w-4e5">
+                                <rect key="frame" x="214.5" y="23.5" width="13" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qc2-q3-taM" secondAttribute="trailing" constant="25" id="7AT-Ra-dAw"/>
+                            <constraint firstItem="Bu3-FC-WAz" firstAttribute="top" secondItem="qc2-q3-taM" secondAttribute="bottom" constant="1" id="7TW-5K-mJR"/>
+                            <constraint firstItem="qc2-q3-taM" firstAttribute="leading" secondItem="v3n-LR-qzq" secondAttribute="leading" constant="12" id="Ozh-31-Ok5"/>
+                            <constraint firstAttribute="trailing" secondItem="Bu3-FC-WAz" secondAttribute="trailing" constant="12" id="eU3-YR-Rss"/>
+                            <constraint firstItem="Bu3-FC-WAz" firstAttribute="leading" secondItem="v3n-LR-qzq" secondAttribute="leading" constant="12" id="hyi-kd-Fop"/>
+                            <constraint firstAttribute="height" constant="214" id="hz1-AY-vgj"/>
+                            <constraint firstItem="QVb-88-Jlr" firstAttribute="top" secondItem="v3n-LR-qzq" secondAttribute="top" id="l1W-jt-ZGr"/>
+                            <constraint firstItem="QVb-88-Jlr" firstAttribute="leading" secondItem="v3n-LR-qzq" secondAttribute="leading" id="rb3-cE-6GS"/>
+                            <constraint firstAttribute="width" constant="253" id="xCX-rX-GO6"/>
+                            <constraint firstAttribute="trailing" secondItem="QVb-88-Jlr" secondAttribute="trailing" id="yG5-dn-l8a"/>
+                            <constraint firstItem="qc2-q3-taM" firstAttribute="top" secondItem="QVb-88-Jlr" secondAttribute="bottom" constant="4" id="zmT-k4-ivK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="v3n-LR-qzq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gr4-i1-wf3"/>
+                <constraint firstAttribute="trailing" secondItem="v3n-LR-qzq" secondAttribute="trailing" id="JXH-uF-unn"/>
+                <constraint firstAttribute="bottom" secondItem="v3n-LR-qzq" secondAttribute="bottom" id="JeV-Xx-pXl"/>
+                <constraint firstItem="v3n-LR-qzq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QHw-nD-PyC"/>
+            </constraints>
+            <size key="customSize" width="253" height="214"/>
+            <connections>
+                <outlet property="homeDesc" destination="Bu3-FC-WAz" id="pjG-eC-zVt"/>
+                <outlet property="homeImage" destination="QVb-88-Jlr" id="uRG-0G-YZi"/>
+                <outlet property="homeTitle" destination="qc2-q3-taM" id="Y4E-5c-gsE"/>
+            </connections>
+            <point key="canvasLocation" x="142.75362318840581" y="48.214285714285715"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Bookmark" width="32" height="32"/>
+        <image name="Vector" width="14" height="17"/>
+        <image name="homepic1" width="253" height="120"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
